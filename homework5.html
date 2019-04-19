@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>flex-basis</title>
+    <style type="text/css">
+        #box{
+            background-color: yellow;
+            display:flex;
+        }
+        .box{
+            height:300px;
+            /*width:300px;不能设定宽度*/
+            background-color:red;
+            flex-grow: 1;
+            margin:10px;
+        }
+        .fbasis{
+            flex-basis:300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="box"></div>
+        <div class="box fbasis"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
